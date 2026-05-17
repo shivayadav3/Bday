@@ -43,7 +43,8 @@
             font-family: 'Satoshi', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-light);
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
             touch-action: manipulation;
         }
 
@@ -67,7 +68,7 @@
         #app {
             display: grid;
             place-items: center;
-            height: 100vh;
+            min-height: 100vh;
             padding: 1rem;
             position: relative;
             z-index: 2;
@@ -330,7 +331,7 @@
                 <div id="polaroid" class="anim-child mb-6">
                     <div id="polaroid-inner" class="rounded-lg shadow-2xl">
                         <img src="myphoto1.jpeg"
-                            alt="A special memory" class="w-full h-72 object-cover rounded-md">
+                            alt="A special memory" class="w-full h-76 object-cover rounded-md">
                         <p class="text-center font-semibold mt-4 text-xl italic">"B'Day Girl😍"</p>
                     </div>
                 </div>
